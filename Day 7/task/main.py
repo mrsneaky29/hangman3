@@ -11,7 +11,6 @@ print(hangman_art.logo)
 
 
 chosen_word = random.choice(word_list)
-print(chosen_word)
 
 placeholder = ""
 word_length = len(chosen_word)
@@ -32,7 +31,7 @@ while not game_over:
     if guess in guessed_letters:
         print("You already guessed that letter." + guess)
         if guess in correct_letters:
-            print(f"You already guessed " + {guess})
+            print(f"You already guessed {guess}")
 
     display = ""
 
